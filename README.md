@@ -22,22 +22,25 @@ addon | version | summary
 [website_anchor_smooth_scroll](website_anchor_smooth_scroll/) | 10.0.1.0.0 | Replace default behavior for internal links (anchor only) with smooth scroll
 [website_blog_category](website_blog_category/) | 10.0.1.0.0 | Website Blog - Categories
 [website_breadcrumb](website_breadcrumb/) | 10.0.1.0.0 | Let you have breadcrumbs in website pages
+[website_canonical_url](website_canonical_url/) | 10.0.1.1.0 | Canonical URL in Website Headers
 [website_container_fluid](website_container_fluid/) | 10.0.1.0.0 | Let you choose between fixed or fluid containers
 [website_cookie_notice](website_cookie_notice/) | 10.0.1.0.0 | Show cookie notice according to cookie law
 [website_crm_privacy_policy](website_crm_privacy_policy/) | 10.0.1.0.0 | Website CRM privacy policy
 [website_crm_quick_answer](website_crm_quick_answer/) | 10.0.1.0.0 | Add an automatic answer for contacts asking for info
 [website_crm_recaptcha](website_crm_recaptcha/) | 10.0.1.0.0 | Provides a ReCaptcha validation in Website Contact Form
 [website_field_autocomplete](website_field_autocomplete/) | 10.0.1.0.0 | Provides an autocomplete field for Website on any model
-[website_form_builder](website_form_builder/) | 10.0.1.0.0 | Build customized forms in your website
-[website_form_recaptcha](website_form_recaptcha/) | 10.0.1.0.0 | Provides a ReCaptcha field for Website Forms
+[website_form_builder](website_form_builder/) | 10.0.1.0.1 | Build customized forms in your website
+[website_form_metadata](website_form_metadata/) | 10.0.1.0.0 | Website Form Metadata
+[website_form_recaptcha](website_form_recaptcha/) | 10.0.1.0.1 | Provides a ReCaptcha field for Website Forms
 [website_legal_page](website_legal_page/) | 10.0.1.2.0 | Website Legal Page
 [website_logo](website_logo/) | 10.0.1.0.0 | Website company logo
-[website_multi_theme](website_multi_theme/) | 10.0.1.0.0 | Support different theme per website
+[website_multi_theme](website_multi_theme/) | 10.0.1.4.0 | Support different theme per website
 [website_no_crawler](website_no_crawler/) | 10.0.1.0.0 | Disables robots.txt for indexing by webcrawlers like Google
 [website_odoo_debranding](website_odoo_debranding/) | 10.0.1.0.0 | Remove odoo.com bindings on website
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 10.0.1.0.0 | Hide any Product Categories that are empty
 [website_sale_line_total](website_sale_line_total/) | 10.0.1.0.0 | Adds separate columns for unit price and total price
 [website_seo_redirection](website_seo_redirection/) | 10.0.1.0.0 | Redirect any controller to the URL of your dreams
+[website_signup_legal_page_required](website_signup_legal_page_required/) | 10.0.1.0.0 | Force the user to accept the legal terms to open an account
 [website_snippet_anchor](website_snippet_anchor/) | 10.0.1.0.0 | Allow to reach a concrete section in the page
 [website_snippet_barcode](website_snippet_barcode/) | 10.0.1.0.0 | Generates barcodes for advertising content
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 10.0.1.0.0 | Allow to select country in a dropdown
