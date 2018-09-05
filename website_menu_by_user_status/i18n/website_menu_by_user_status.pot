@@ -6,8 +6,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-02 14:37+0000\n"
-"PO-Revision-Date: 2015-02-02 14:37+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,15 +14,27 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: website_menu_by_user_status
-#: code:addons/website_menu_by_user_status/models/website_menu.py:36
+#: code:addons/website_menu_by_user_status/models/website_menu.py:34
+#: help:website.menu,user_logged:0
 #, python-format
 msgid "If checked, the menu will be displayed when the user is logged."
 msgstr ""
 
 #. module: website_menu_by_user_status
-#: code:addons/website_menu_by_user_status/models/website_menu.py:43
+#: code:addons/website_menu_by_user_status/models/website_menu.py:41
+#: help:website.menu,user_not_logged:0
 #, python-format
 msgid "If checked, the menu will be displayed when the user is not logged."
+msgstr ""
+
+#. module: website_menu_by_user_status
+#: field:website.menu,user_logged:0
+msgid "User Logged"
+msgstr ""
+
+#. module: website_menu_by_user_status
+#: field:website.menu,user_not_logged:0
+msgid "User Not Logged"
 msgstr ""
 
 #. module: website_menu_by_user_status
