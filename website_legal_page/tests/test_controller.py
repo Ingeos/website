@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright 2017 LasLabs Inc.
 # License APL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
@@ -7,10 +6,9 @@ from odoo.tools import mute_logger
 
 
 class TestController(HttpCase):
-
     def _test_page(self, page, code=200):
-        response = self.url_open(page, timeout=40)
-        self.assertEqual(response.getcode(), code)
+        response = self.url_open(page, timeout=20)
+        self.assertEqual(response.status_code, code)
 
     @mute_logger("odoo.addons.website.models.ir_ui_view")
     def test_unknown(self):

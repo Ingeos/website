@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright 2017 Jairo Llopis <jairo.llopis@tecnativa.com>
 # Copyright 2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
@@ -36,16 +35,19 @@ class IrUiView(models.Model):
     )
 
     @api.model
-    def _customize_template_get_views(self, key, full=False, bundles=False):
+    def get_related_views(self, key, bundles=False):
         """This method is used to prepare items
            in 'Customize' menu of website Editor"""
-        views = super(IrUiView, self)._customize_template_get_views(
-            key, full=full, bundles=bundles
+        views = super(IrUiView, self).get_related_views(
+            key, bundles=bundles
         )
-        if full:
-            return views
         current_website = request.website
-        return views.filtered(lambda v: v.website_id == current_website)
+        current_website_only = self.env.context.get('current_website_only')
+        return views.filtered(
+            lambda v:
+            not v.website_id and not current_website_only
+            or v.website_id == current_website
+        )
 
     @api.multi
     def _replace_parent(self, new_parent):

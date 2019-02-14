@@ -19,28 +19,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: website_logo
-#: code:addons/website_logo/controllers/main.py:65
+#: code:addons/website_logo/controllers/main.py:64
 #, python-format
 msgid "Could not get website logo, falling back to default"
 msgstr ""
 
 #. module: website_logo
-#: model:ir.ui.view,arch_db:website_logo.view_website_config_settings
+#: model:ir.ui.view,arch_db:website_logo.res_config_settings_view_form
 #: model:ir.ui.view,arch_db:website_logo.view_website_form
 msgid "Logo"
 msgstr ""
 
 #. module: website_logo
-#: model:ir.model.fields,help:website_logo.field_website_logo
-msgid ""
-"This field holds the logo for this website, showed in header. Recommended "
-"size is 180x50"
+#: model:ir.ui.view,arch_db:website_logo.res_config_settings_view_form
+msgid "Name, favicon and logo of your website"
 msgstr ""
 
 #. module: website_logo
-#: model:ir.model.fields,help:website_logo.field_website_config_settings_logo
+#: model:ir.model.fields,help:website_logo.field_res_config_settings_logo
+#: model:ir.model.fields,help:website_logo.field_website_logo
 msgid ""
-"This field holds the logo for this website, showed in header.Recommended "
+"This field holds the logo for this website, showed in header. Recommended "
 "size is 180x50"
 msgstr ""
 
@@ -50,12 +49,13 @@ msgid "Website"
 msgstr "Webbplats"
 
 #. module: website_logo
-#: model:ir.model.fields,field_description:website_logo.field_website_config_settings_logo
+#: model:ir.model.fields,field_description:website_logo.field_res_config_settings_logo
 #: model:ir.model.fields,field_description:website_logo.field_website_logo
+#: model:ir.ui.view,arch_db:website_logo.layout_logo_show
 msgid "Website logo"
 msgstr ""
 
 #. module: website_logo
-#: model:ir.model,name:website_logo.model_website_config_settings
-msgid "website.config.settings"
+#: model:ir.model,name:website_logo.model_res_config_settings
+msgid "res.config.settings"
 msgstr ""

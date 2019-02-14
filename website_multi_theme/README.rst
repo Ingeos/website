@@ -13,6 +13,12 @@ particular views from any module (e.g. view ``website.custom_footer`` from
 ``website`` module). It also means, that *theme* is not just a styling, but
 a content as well.
 
+It adds controls to make managing multiple websites easier:
+
+* Drop-down list to switch to a different website.
+* Change the related website of pages in the page properties dialog with checkboxes.
+* Adds the field `website_ids` to the `website.page` tree.
+
 How it works
 ============
 
@@ -82,9 +88,11 @@ Configuration
 To configure this module, you need to:
 
 #. Go to *Website Admin > Configuration > Settings* and choose or create
-    a *Website*.
+   a *Website*.
 #. Press *Advanced > Multiwebsite theme > Reload*.
 #. In *Advanced > Multiwebsite theme*, pick one of the available themes.
+#. Via Edit button (``fa-external-link``) add *Default Theme* to *Sub-themes* of
+   the selected theme to make multi-footer work.
 
 Once you save, any website that has no *Multiwebsite theme* selected will have,
 the default plain Bootstrap theme, and those that do have one will get it.
@@ -93,7 +101,7 @@ Of course, your Odoo instance must be reachable by all of the provided host
 names, or nobody will ever see the effect. But that is most likely configured
 through your DNS provider and/or proxy, so it is not a matter of this addon.
 
-If you want to test this behavior, think that ``localhost`` and ``127.0.0.1``
+If you want to test this behavior, think that ``localhost`` and ``0.0.0.0``
 are different host names.
 
 Usage
@@ -106,7 +114,7 @@ To use this module, you need to:
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
-   :target: https://runbot.odoo-community.org/runbot/186/10.0
+   :target: https://runbot.odoo-community.org/runbot/186/11.0
 
 Development FAQ
 ===============
@@ -140,6 +148,20 @@ scratch).
 This does not happen in demo or development instances, where views arch is
 always updated.
 
+How to test on runbot?
+----------------------
+
+* Open ``[[ Website ]] >> Configuration >> Settings``
+* Switch *Website* field from ``Website localhost`` to ``Website 0.0.0.0``
+* Click *fa-external-link* icon to edit the Website
+* At **Website Domain** field copy-paste build domain and add something right after the first dot, for example::
+
+      Original domain: 3308093-10-0-28910f.runbot2.odoo-community.org
+           New domain: 3308093-10-0-28910f.second-website.runbot2.odoo-community.org
+
+* Click ``[Save]`` to save changes at the Website
+* Now you can use unchanged build domain for website called ``Website localhost`` and updated domain for website called ``Website 0.0.0.0``
+
 Known issues / Roadmap
 ======================
 
@@ -152,12 +174,6 @@ Known issues / Roadmap
 * If you install any unsupported theme along with this addon, it would possibly
   become the base for all those supported, which can easily lead to weird
   situations and errors.
-* This addon will not work if your Odoo is not patched. Make sure it is updated
-  before installing. It must include these commits:
-
-  - https://github.com/odoo/odoo/commit/15bf41270d3abb607e7b623b59355594cad170cf
-  - https://github.com/odoo/odoo/commit/7c6714d7fee4125f037ef194f9cff5235a6c5320
-  - https://github.com/odoo/odoo/commit/48fe0a595308722a26afd5361432f24c610b4ba0
 
 Credits
 =======
@@ -169,6 +185,7 @@ Contributors
 * Antonio Espinosa <antonio.espinosa@tecnativa.com>
 * Jairo Llopis <jairo.llopis@tecnativa.com>
 * Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+* Dennis Sluijk <d.sluijk@onestein.nl>
 
 Maintainer
 ----------

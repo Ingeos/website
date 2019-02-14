@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #. module: website_form_builder
 #. openerp-web
-#: code:addons/website_form_builder/static/src/js/snippets.js:347
+#: code:addons/website_form_builder/static/src/js/snippets.js:355
 #, python-format
 msgid "%s help block"
 msgstr ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #. module: website_form_builder
 #. openerp-web
-#: code:addons/website_form_builder/static/src/js/snippets.js:340
+#: code:addons/website_form_builder/static/src/js/snippets.js:348
 #, python-format
 msgid "Custom %s field"
 msgstr ""
@@ -107,7 +107,7 @@ msgstr ""
 
 #. module: website_form_builder
 #. openerp-web
-#: code:addons/website_form_builder/static/src/js/snippets.js:343
+#: code:addons/website_form_builder/static/src/js/snippets.js:351
 #, python-format
 msgid "Option %d"
 msgstr ""

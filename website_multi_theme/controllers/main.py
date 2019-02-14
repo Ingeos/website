@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright 2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
@@ -27,3 +26,9 @@ class WebsiteMultiTheme(Website):
             for xml_id in group
         ] for group in res]
         return res
+
+    @route()
+    def get_switchable_related_views(self, key):
+        new_context = dict(request.env.context, current_website_only=True)
+        request.context = new_context
+        return super(WebsiteMultiTheme, self).get_switchable_related_views(key)

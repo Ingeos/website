@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright 2015 Antiun Ingenieria S.L. - Antonio Espinosa
 # Copyright 2017 Jairo Llopis <jairo.llopis@tecnativa.com>
 # Copyright 2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
@@ -7,10 +6,11 @@
 {
     "name": "Website Multi Theme",
     "summary": "Support different theme per website",
-    "version": "10.0.1.4.0",
+    "version": "11.0.1.6.1",
     "category": "Website",
     "website": "https://www.tecnativa.com",
-    "author": "Tecnativa, IT-Projects LLC, Odoo Community Association (OCA)",
+    "author": "Tecnativa, IT-Projects LLC, Onestein, "
+              "Odoo Community Association (OCA)",
     "license": "LGPL-3",
     "application": False,
     "installable": True,
@@ -24,12 +24,19 @@
         "data/themes_private.xml",
         "templates/assets.xml",
         "templates/patterns.xml",
+        "templates/user_navbar.xml",
         "data/themes_default.xml",
         "views/ir_ui_view.xml",
+        "views/website_view.xml",
+        "views/website_page_view.xml",
+        "views/website_menu_view.xml",
+        "menuitems.xml",
+        "data/ir_module_category.xml",
     ],
     "demo": [
         "demo/pages.xml",
         "demo/themes.xml",
+        "demo/website.xml",
     ],
     "external_dependencies": {
         "bin": [
@@ -38,4 +45,5 @@
             "scss",
         ],
     },
+    "uninstall_hook": "uninstall_hook",
 }

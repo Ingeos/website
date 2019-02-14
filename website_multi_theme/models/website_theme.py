@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright 2015 Antiun Ingenieria S.L. - Antonio Espinosa
 # Copyright 2017 Jairo Llopis <jairo.llopis@tecnativa.com>
 # Copyright 2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>

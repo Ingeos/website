@@ -28,29 +28,22 @@ msgstr ""
 
 #. module: website_snippet_anchor
 #. openerp-web
-#: code:addons/website_snippet_anchor/static/src/js/anchor_option.js:23
-#: code:addons/website_snippet_anchor/static/src/xml/link_dialog.xml:12
+#: code:addons/website_snippet_anchor/static/src/js/anchor_option.js:19
+#: code:addons/website_snippet_anchor/static/src/xml/link_dialog.xml:10
 #, python-format
 msgid "Anchor"
 msgstr "Âncora"
 
 #. module: website_snippet_anchor
 #. openerp-web
-#: code:addons/website_snippet_anchor/static/src/js/anchor_option.js:62
+#: code:addons/website_snippet_anchor/static/src/js/anchor_option.js:57
 #, python-format
 msgid "Anchor '%s' already exists or is not valid"
 msgstr ""
 
 #. module: website_snippet_anchor
 #. openerp-web
-#: code:addons/website_snippet_anchor/static/src/xml/link_dialog.xml:10
-#, python-format
-msgid "Anchors are appended to the URL like http://localhost/#your-anchor"
-msgstr "Âncoras são adicionadas a URL como http://localhost/#your-anchor"
-
-#. module: website_snippet_anchor
-#. openerp-web
-#: code:addons/website_snippet_anchor/static/src/js/anchor_option.js:22
+#: code:addons/website_snippet_anchor/static/src/js/anchor_option.js:18
 #, python-format
 msgid "Choose anchor"
 msgstr "Escolha uma âncora"
@@ -64,7 +57,10 @@ msgstr ""
 
 #. module: website_snippet_anchor
 #. openerp-web
-#: code:addons/website_snippet_anchor/static/src/xml/link_dialog.xml:19
+#: code:addons/website_snippet_anchor/static/src/xml/link_dialog.xml:17
 #, python-format
 msgid "your-anchor"
 msgstr ""
+
+#~ msgid "Anchors are appended to the URL like http://localhost/#your-anchor"
+#~ msgstr "Âncoras são adicionadas a URL como http://localhost/#your-anchor"
